@@ -1,0 +1,58 @@
+body{
+  margin:0px;
+}
+.padre{
+  background: #02002D;
+  display: flex;
+
+
+}
+.tito{
+  color: white;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 19px;
+
+}
+.buscar{
+  margin-top: 20px;
+  height: 44px;
+  width: 280px;
+  border-radius: 7px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.boton{
+  margin-top:20px;
+  background-color: #0A0747  ;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  text-shadow: #A2A1BE;
+  width: 120px;
+
+}
+.nuevopost{
+  width: 65%;
+  border:1px solid #ccc;
+  margin:20px;
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 20%;
+}
+label{
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+input{
+  margin-bottom:20px;
+  width: 100%;
+
+}
+.titulo{
+  font-size: 35px;
+}
