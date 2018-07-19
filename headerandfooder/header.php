@@ -20,9 +20,9 @@ function get_header($head = '')
  </div>
 
    <input class="buscar" type="search" placeholder="Buscar">
-   <input  class="boton"type="button" name="" value="Nuevo post">
+   <a href="/examen2/nuevo.php"><input class="boton" type="button" name="" value="Nuevo post"></a>
 
-  
+
 
 
    </div>

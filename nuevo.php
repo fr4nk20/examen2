@@ -1,6 +1,8 @@
 <?php
 include "headerandfooder/header.php";
 include "headerandfooder/fooder.php";
+include_once "clases/FlashMessage.php";
+include_once "clases/helpers.php";
 get_header();
 
  ?>
@@ -11,6 +13,29 @@ get_header();
        <input  class="boton"type="submit"  value="Publicar">
 
      </form>
+
+     <?php if ($flashMessage->hasErrors() || $flashMessage->hasMessage()): ?>
+    <div class="alert danger">
+      <?php if ($flashMessage->hasMessage()): ?>
+      <p><?= $flashMessage->getMessage() ?></p>
+      <?php endif; ?>
+
+      <?php if ($flashMessage->hasErrors()): ?>
+        <ul>
+          <?php foreach ($flashMessage->all() as $error): ?>
+            <li><?= $error[0] ?></li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if ($flashMessage->hasSuccessMessage()): ?>
+    <div class="alert success">
+      <?= $flashMessage->getSuccessMessage() ?>
+    </div>
+    <?php endif; ?>
+    </div>
      <?php
-     get_fooder();
+    get_footer();
       ?>

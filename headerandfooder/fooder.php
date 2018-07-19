@@ -1,8 +1,7 @@
 <?php
-function get_fooder()
-{
+function get_footer(){
  ?>
-</body>
+  </body>
 </html>
 <?php
 }
